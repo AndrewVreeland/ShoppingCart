@@ -49,13 +49,13 @@ function addSelectedItemToCart() {
   console.log('Cart item', state.cart);
 }
 
-// TODO: As you add items into the cart, show them (item & quantity) in the cart preview div
+// DONE: As you add items into the cart, show them (item & quantity) in the cart preview div
 function updateCartPreview(item) {
   let cartContent = document.getElementById('cartContents');
   
   // DONE: Get the item and quantity from the form
 
-  // TODO: Add a new element to the cartContents div with that information
+  // DONE: Add a new element to the cartContents div with that information
 let previewInfo = document.createElement('div');
 previewInfo.textContent = item.product + item.quantity;
 cartContent.appendChild(previewInfo);
